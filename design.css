@@ -1,15 +1,65 @@
 body {
-    background-color: black
+    background-image: url("Donut.png");
+    
 }
 * {
     box-sizing: border-box;
 }
 h1 {
     text-align: center;
-    color: lightgray
+    color: #F6F6F6
 
 }
 h2 {
     text-align: center;
-    color: lightgray
+    color: #F6F6F6
+}
+.header {
+    position: fixed;
+    width: 8%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #F6F6F6;
+    padding: 20px 10px;
+    border-radius: 3px
+
+}
+.rest {
+    width: 90%;
+}
+.header a {
+    text-align:center;
+    display: block;
+    color: #333333;
+    padding: 12px;
+    padding-top: 24px;
+    text-decoration: none;
+    font size: 18;
+    line-height: 25px;
+    border-radius: 4px;
+}
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    background-color: #E0E0E0;
+    
+}
+
+.header a.active  {
+    background-color: #E0E0E0;
+    
+}
+
+.header-menu {
+    padding-top:150px;
+    float:none;
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        width: 20%;
+    }
 }
